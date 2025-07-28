@@ -1,111 +1,95 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Freepal Coin (FPC) - Koin Kebebasan Palestina</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freepal Coin (FPC)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d0d0d;
-      color: #e0e0e0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0a0a;
+      color: #f1f1f1;
+    }
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     header {
-      background: linear-gradient(90deg, #00ff99, #00ccff);
-      padding: 30px;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #000;
+      font-size: 2.5em;
     }
-    header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: #111;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      background-color: #1a1a1a;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,255,255,0.1);
-    }
-    h2 {
-      color: #00ffc6;
-    }
-    ul, ol {
-      margin-left: 20px;
-    }
-    .cta {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .cta a {
-      background: #00ccff;
-      color: #000;
-      padding: 14px;
-      border-radius: 8px;
-      text-align: center;
-      font-weight: bold;
+    .btn {
+      background-color: #ffbf00;
+      color: black;
+      padding: 10px 20px;
       text-decoration: none;
-      transition: 0.3s ease;
+      font-weight: bold;
+      border-radius: 8px;
+      margin: 10px;
+      display: inline-block;
     }
-    .cta a:hover {
-      background: #00ff99;
-      color: #000;
+    .section-title {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-left: 6px solid #ffbf00;
+      padding-left: 10px;
+    }
+    .roadmap-step {
+      margin-bottom: 15px;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 400px;
+      margin-top: 20px;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background: #111;
-      font-size: 0.9rem;
-      color: #999;
-      margin-top: 60px;
+      font-size: 0.9em;
+      color: #888;
+      border-top: 1px solid #333;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Logo Freepal Coin" style="width: 100px;">
     <h1>Freepal Coin (FPC)</h1>
-    <p>Koin Digital Simbol Kebebasan & Keadilan untuk Palestina</p>
-  </header>
-
-  <main>
-    <h2>🚀 Apa Itu Freepal Coin?</h2>
-    <p>
-      Freepal Coin (FPC) adalah token crypto berbasis Polygon yang terinspirasi dari semangat perjuangan rakyat Palestina untuk mendapatkan keadilan dan kebebasan. FPC adalah bentuk partisipasi digital global yang terbuka untuk siapa saja, hanya dengan HP.
-    </p>
-
-    <h2>🔐 Fitur Utama</h2>
+    <p>Koin Kebebasan Palestina — oleh rakyat, untuk rakyat</p>
+    <a href="#" class="btn">Beli FPC</a>
+    <a href="whitepaper.pdf" class="btn">Whitepaper</a>
+  </header>  <section>
+    <h2 class="section-title">Tentang FPC</h2>
+    <p>Freepal Coin (FPC) adalah token berbasis blockchain Polygon yang bertujuan mendukung kebebasan Palestina dan membuka akses finansial global. Total suplai adalah 14.500.000 FPC, tidak dapat dicetak ulang.</p>
     <ul>
-      <li>✔️ Total Supply: 14.500.000 FPC (tetap, tidak bisa dicetak ulang)</li>
-      <li>✔️ Biaya transaksi super murah (jaringan Polygon)</li>
-      <li>✔️ Bisa diperoleh lewat aktivitas sederhana</li>
-      <li>✔️ Bisa ditukar ke Bitcoin (manual/DEX)</li>
+      <li>Jaringan: Polygon Mainnet</li>
+      <li>Alamat Kontrak: <code>0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B</code></li>
+      <li>Token Ticker: FPC</li>
     </ul>
-
-    <h2>🎁 Cara Mendapatkan FPC</h2>
-    <ol>
-      <li>Tonton video ➝ <a href="https://freepalcoin.github.io/FreeWatch" target="_blank">FreeWatch</a></li>
-      <li>Dapatkan poin ➝ Tukarkan menjadi FPC</li>
-      <li>Gunakan atau tukar FPC jadi Bitcoin</li>
-    </ol>
-
-    <div class="cta">
-      <a href="https://freepalcoin.github.io/FreeWatch" target="_blank">🎬 Mulai Nonton & Dapatkan FPC</a>
-      <a href="mailto:faktinyaid@gmail.com">📧 Hubungi Admin</a>
-      <a href="#">📜 Unduh Whitepaper (segera)</a>
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 Freepal Coin • Dibangun untuk Keadilan & Kebebasan
+  </section>  <section>
+    <h2 class="section-title">Harga Live & Chart</h2>
+    <iframe src="https://www.geckoterminal.com/polygon_pos/pools"></iframe>
+  </section>  <section>
+    <h2 class="section-title">Roadmap</h2>
+    <div class="roadmap-step">✅ Tahap 1: Deploy & Verifikasi Kontrak</div>
+    <div class="roadmap-step">🔜 Tahap 2: Launch Website & Whitepaper</div>
+    <div class="roadmap-step">🔜 Tahap 3: List di DEX & Promosi Komunitas</div>
+    <div class="roadmap-step">🔜 Tahap 4: Partner Strategis & Listing CEX</div>
+  </section>  <section>
+    <h2 class="section-title">Tim & Komunitas</h2>
+    <p>Gabung dengan komunitas kami dan bantu sebarkan gerakan #FreePalestine lewat teknologi blockchain.</p>
+    <ul>
+      <li><a href="https://t.me/freepalcoin" target="_blank">Telegram</a></li>
+      <li><a href="https://x.com/freepalcoin" target="_blank">X (Twitter)</a></li>
+      <li><a href="https://github.com/freepalcoin" target="_blank">GitHub</a></li>
+    </ul>
+  </section>  <footer>
+    &copy; 2025 Freepal Coin — Email: faktinyaid@gmail.com
   </footer>
 </body>
 </html>
