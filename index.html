@@ -1,95 +1,185 @@
-<!DOCTYPE html><html lang="id">
+""<!DOCTYPE html>
+
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Freepal Coin (FPC)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" />
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #0a0a0a;
-      color: #f1f1f1;
-    }
-    header, section, footer {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    header {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
+      padding: 2rem;
+    }a {
+  color: #00ffae;
+  text-decoration: none;
+  font-weight: bold;
+  word-break: break-word;
+}
+
+h1, h2, h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #00ffae;
+  color: #111;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #00d29c;
+}
+
+iframe {
+  border: none;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+img.logo {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.social-section {
+  margin-top: 3rem;
+}
+
+.social-section h3 {
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #222;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #00ffae;
+}
+
+.social-icons img {
+  width: 26px;
+  height: 26px;
+}
+
+.wallet-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.wallet-buttons a {
+  background-color: #00d084;
+  color: black;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  min-width: 120px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.wallet-buttons a:hover {
+  background-color: #00a86b;
+  color: white;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+  </style>  <script>
+    function copyAddress() {
+      navigator.clipboard.writeText("0x76388169eA77B8a63AD6933bf154b6095523f99C");
+      alert("Address copied!");
     }
-    header h1 {
-      font-size: 2.5em;
+  </script></head>
+<body>  <div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 9999;"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'id',
+        includedLanguages: 'en,id,ar,fr,de,ru,zh,ja',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
     }
-    .btn {
-      background-color: #ffbf00;
-      color: black;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      margin: 10px;
-      display: inline-block;
-    }
-    .section-title {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-      border-left: 6px solid #ffbf00;
-      padding-left: 10px;
-    }
-    .roadmap-step {
-      margin-bottom: 15px;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 400px;
-      margin-top: 20px;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      border-top: 1px solid #333;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="Logo Freepal Coin" style="width: 100px;">
-    <h1>Freepal Coin (FPC)</h1>
-    <p>Koin Kebebasan Palestina — oleh rakyat, untuk rakyat</p>
-    <a href="#" class="btn">Beli FPC</a>
-    <a href="whitepaper.pdf" class="btn">Whitepaper</a>
-  </header>  <section>
-    <h2 class="section-title">Tentang FPC</h2>
-    <p>Freepal Coin (FPC) adalah token berbasis blockchain Polygon yang bertujuan mendukung kebebasan Palestina dan membuka akses finansial global. Total suplai adalah 14.500.000 FPC, tidak dapat dicetak ulang.</p>
-    <ul>
-      <li>Jaringan: Polygon Mainnet</li>
-      <li>Alamat Kontrak: <code>0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B</code></li>
-      <li>Token Ticker: FPC</li>
-    </ul>
-  </section>  <section>
-    <h2 class="section-title">Harga Live & Chart</h2>
-    <iframe src="https://www.geckoterminal.com/polygon_pos/pools"></iframe>
-  </section>  <section>
-    <h2 class="section-title">Roadmap</h2>
-    <div class="roadmap-step">✅ Tahap 1: Deploy & Verifikasi Kontrak</div>
-    <div class="roadmap-step">🔜 Tahap 2: Launch Website & Whitepaper</div>
-    <div class="roadmap-step">🔜 Tahap 3: List di DEX & Promosi Komunitas</div>
-    <div class="roadmap-step">🔜 Tahap 4: Partner Strategis & Listing CEX</div>
-  </section>  <section>
-    <h2 class="section-title">Tim & Komunitas</h2>
-    <p>Gabung dengan komunitas kami dan bantu sebarkan gerakan #FreePalestine lewat teknologi blockchain.</p>
-    <ul>
-      <li><a href="https://t.me/freepalcoin" target="_blank">Telegram</a></li>
-      <li><a href="https://x.com/freepalcoin" target="_blank">X (Twitter)</a></li>
-      <li><a href="https://github.com/freepalcoin" target="_blank">GitHub</a></li>
-    </ul>
-  </section>  <footer>
-    &copy; 2025 Freepal Coin — Email: faktinyaid@gmail.com
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  <img src="logo.png" alt="Freepal Coin Logo" class="logo" />
+  <h1>Freepal Coin (FPC)</h1>
+  <p><strong>Koin kebebasan yang mendukung kemerdekaan Palestina dan masa depan finansial global yang inklusif.</strong></p>  <h2>Harga Token Live</h2>
+  <iframe src="https://dexscreener.com/polygon/0x9cfe18fac7c8d9fa4aa4c7872d1ba11f09aeb38b?embed=1&theme=dark" width="100%" height="300"></iframe>  <h2>Beli FPC Sekarang</h2>
+  <a class="btn" href="https://quickswap.exchange/#/swap?outputCurrency=0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B" target="_blank">Beli di QuickSwap</a>  <h2>Smart Contract</h2>
+  <a href="https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B" target="_blank">
+    0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B
+  </a>
+  <br/>
+  <a href="freewatch.html" class="btn">🎥 Watch & Earn</a>  <h2>Whitepaper</h2>
+  <iframe src="whitepaper_freepal_coin.pdf#toolbar=0" width="100%" height="500px"></iframe>  <h2>Alamat Donasi Palestina</h2>
+  <a href="https://polygonscan.com/address/0x76388169eA77B8a63AD6933bf154b6095523f99C" target="_blank">
+    0x76388169eA77B8a63AD6933bf154b6095523f99C
+  </a>  <section class="wallet-section">
+    <h2 style="font-size: 1.8rem;">Top-Up / Bayar<br>via e-Wallet</h2>
+    <div class="wallet-buttons">
+      <a href="https://link.dana.id/yourid" target="_blank">DANA</a>
+      <a href="https://www.gopay.co.id/qris" target="_blank">GoPay</a>
+      <a href="https://ovo.id/" target="_blank">OVO</a>
+      <a href="https://shopeepay.co.id/" target="_blank">ShopeePay</a>
+      <a href="https://ib.bri.co.id/ib-bri/" target="_blank">BRI Mobile</a>
+      <a href="https://ibank.bca.co.id/" target="_blank">BCA Mobile</a>
+    </div>
+  </section>  <div class="social-section">
+    <h3>Media Sosial</h3>
+    <div class="social-icons">
+      <a href="https://t.me/FreepalCoin1" target="_blank">
+        <img src="https://cdn.simpleicons.org/telegram/ffffff" alt="Telegram">
+      </a>
+      <a href="https://twitter.com/CoinFreepal" target="_blank">
+        <img src="https://cdn.simpleicons.org/x/ffffff" alt="Twitter">
+      </a>
+    </div>
+  </div>  <footer>
+    &copy; 2025 Freepal Coin. All rights reserved.
   </footer>
 </body>
 </html>
