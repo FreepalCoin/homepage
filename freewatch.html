@@ -2,66 +2,54 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FreeWatch - Tonton & Dapatkan Freepal Coin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FreeWatch - Nonton Dapat Freepal Coin</title>
   <style>
     body {
-      margin: 0;
-      background-color: #0d0d0d;
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
       color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
     }
     h1 {
-      color: #00ffae;
-      font-size: 2rem;
-    }
-    p {
-      margin: 16px auto;
-      max-width: 600px;
-      font-size: 1rem;
-      line-height: 1.6;
+      color: #00ff88;
     }
     .btn {
-      display: inline-block;
-      background-color: #00ffae;
-      color: #000;
+      margin-top: 20px;
       padding: 12px 24px;
-      font-weight: bold;
-      text-decoration: none;
+      background-color: #00ff88;
+      color: #000;
+      border: none;
       border-radius: 8px;
-      margin: 12px;
-      transition: 0.3s;
+      font-size: 16px;
+      cursor: pointer;
     }
     .btn:hover {
-      background-color: #00d89e;
-    }
-    .video-frame {
-      margin: 30px auto;
-      max-width: 560px;
+      background-color: #00dd77;
     }
   </style>
 </head>
 <body>
+  <h1>Selamat Datang di FreeWatch</h1>
+  <p>Nonton video dan dapatkan reward Freepal Coin (FPC)!</p>
+  
+  <!-- Tombol asli tanpa iklan -->
+  <button class="btn" onclick="startVideo()">Tonton & Dapatkan Poin</button>
 
-  <h1>🎥 Tonton Video & Dapatkan Freepal Coin!</h1>
-
-  <p>
-    Tonton video di bawah ini sampai selesai. Klik Like dan Subscribe channel <strong>FaktinyaID</strong>. Setelah itu, klik tombol klaim untuk mendapatkan hadiah berupa Freepal Coin (FPC).
-  </p>
-
-  <div class="video-frame">
-    <iframe width="100%" height="315"
-      src="https://www.youtube.com/embed/uhY690r0TTU"
-      frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <a class="btn" href="https://youtube.com/@faktinyaid" target="_blank">👉 Subscribe Channel FaktinyaID</a>
-  <a href="https://forms.gle/Rad5izGJJepMxDTs9" target="_blank">
-  <button class="btn">Klaim Hadiah 🎁</button>
-</a>
+  <!-- Monetag: In-Page Push Ads (otomatis tampil, tidak lewat tombol) -->
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="160411" async data-cfasync="false"></script>
+
+  <!-- Aksi tombol -->
+  <script>
+    function startVideo() {
+      alert("Video dimulai... (simulasi), poin akan dihitung.");
+      // Nanti ganti ini dengan sistem poin & video asli
+    }
+  </script>
 </body>
 </html>
-
