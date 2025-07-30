@@ -38,17 +38,16 @@
   <h1>Selamat Datang di FreeWatch</h1>
   <p>Nonton video dan dapatkan reward Freepal Coin (FPC)!</p>
   
-  <!-- Tombol asli tanpa iklan -->
-  <button class="btn" onclick="startVideo()">Tonton & Dapatkan Poin</button>
+  <!-- Tombol Trigger Iklan Popunder -->
+  <button class="btn" onclick="openAd()">Tonton & Dapatkan Poin</button>
 
-  <!-- Monetag: In-Page Push Ads (otomatis tampil, tidak lewat tombol) -->
+  <!-- Monetag: In-Page Push Ads -->
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="160411" async data-cfasync="false"></script>
 
-  <!-- Aksi tombol -->
+  <!-- Script untuk Popunder -->
   <script>
-    function startVideo() {
-      alert("Video dimulai... (simulasi), poin akan dihitung.");
-      // Nanti ganti ini dengan sistem poin & video asli
+    function openAd() {
+      window.open("https://fpyf8.com/88/push.html", "_blank");
     }
   </script>
 </body>
