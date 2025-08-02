@@ -169,6 +169,39 @@ footer {
   <button onclick="connectWallet()">🔗 Hubungkan MetaMask</button>
   <p id="walletAddress"></p>
 </div>  
+  <script>
+function register() {
+  const nama = document.getElementById('nama').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  localStorage.setItem('user', JSON.stringify({ nama, email, password }));
+  alert("Pendaftaran berhasil!");
+}
+
+function login() {
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const user = JSON.parse(localStorage.getItem('user'));
+  if (user && user.email === email && user.password === password) {
+    alert("Login sukses, selamat datang " + user.nama);
+  } else {
+    alert("Email atau password salah");
+  }
+}
+
+async function connectWallet() {
+  if (window.ethereum) {
+    try {
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+      document.getElementById('walletAddress').innerText = "Wallet: " + accounts[0];
+    } catch (error) {
+      alert("Gagal terhubung ke wallet");
+    }
+  } else {
+    alert("MetaMask tidak terdeteksi!");
+  }
+}
+</script>
   
   <a href="freewatch" class="btn">🎥 Watch & Earn</a>  <h2>Whitepaper</h2>
   <iframe src="whitepaper_freepal_coin.pdf#toolbar=0" width="100%" height="500px"></iframe>  <h2>Alamat Donasi Palestina</h2>
