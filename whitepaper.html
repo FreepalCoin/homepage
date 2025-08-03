@@ -66,8 +66,6 @@
           supply: "Total Supply: 14.500.000 FPC",
           network: "Jaringan: Polygon Mainnet",
           contract: "Smart Contract: ",
-          telegram: "Telegram: ",
-          website: "Situs Web: "
         }
       };const t = translations[lang];
   document.getElementById("intro").textContent = t.intro;
@@ -75,11 +73,8 @@
   document.getElementById("autoburn").textContent = t.autoburn;
   document.getElementById("supply").textContent = t.supply;
   document.getElementById("network").textContent = t.network;
-  document.getElementById("contract-label").textContent = t.contract;
-  document.getElementById("telegram-label").textContent = t.telegram;
-  document.getElementById("website-label").textContent = t.website;
-}
-
+  document.getElementById("contract-label").textContent = t.contract-label;
+    }
   </script>
 </head>
 <body onload="translateContent('id')">
@@ -101,7 +96,7 @@
       0xEb41d826226f1083B7EAE6D32789Df2F1b3e9BD6
     </a>
      <h3>Media Sosial</h3>
-    <div class="social-icons">
+    <div class="social-icons img">
       <a href="https://t.me/CoinFreepal" target="_blank">
         <img src="https://cdn.simpleicons.org/telegram/ffffff" alt="Telegram">
       </a>
