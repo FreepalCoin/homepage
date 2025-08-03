@@ -1,273 +1,107 @@
-<!DOCTYPE html>
-
-<html lang="en">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="monetag" content="94f103013017df4394a9b65242f1f769">
-  <title>Freepal Coin (FPC)</title>
-  <link rel="icon" href="logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freepal Coin (FPC) - Koin untuk Kebebasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 20px;
       text-align: center;
-      padding: 2rem;
-    }a {
-  color: #00ffae;
-  text-decoration: none;
-  font-weight: bold;
-  word-break: break-word;
-}
-
-h1, h2, h3 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  max-width: 700px;
-  margin-bottom: 1.5rem;
-}
-
-.btn {
-  background-color: #00ffae;
-  color: #111;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background-color: #00d29c;
-}
-
-iframe {
-  border: none;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-}
-
-img.logo {
-  width: 100px;
-  margin-bottom: 1.5rem;
-}
-
-.social-section {
-  margin-top: 3rem;
-}
-
-.social-section h3 {
-  margin-bottom: 1rem;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 0.5rem;
-}
-
-.social-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #222;
-  transition: background-color 0.3s;
-}
-
-.social-icons a:hover {
-  background-color: #00ffae;
-}
-
-.social-icons img {
-  width: 26px;
-  height: 26px;
-}
-
-.wallet-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.wallet-buttons a {
-  background-color: #00d084;
-  color: black;
-  padding: 12px 18px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  min-width: 120px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.wallet-buttons a:hover {
-  background-color: #00a86b;
-  color: white;
-}
-
-footer {
-  margin-top: 4rem;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-  </style>  <script>
-    function copyAddress() {
-      navigator.clipboard.writeText("0x76388169eA77B8a63AD6933bf154b6095523f99C");
-      alert("Address copied!");
+      border-bottom: 2px solid #f1c40f;
     }
-  </script></head>
-<body>  <div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 9999;"></div>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'id',
-        includedLanguages: 'en,id,ar,fr,de,ru,zh,ja',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 15px 0;
     }
-  </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  <img src="logo.png" alt="Freepal Coin Logo" class="logo" />
-  <h1>Freepal Coin (FPC)</h1>
-  <p><strong>Koin kebebasan yang mendukung kemerdekaan Palestina dan masa depan finansial global yang inklusif.</strong></p>  <h2>Harga Token Live</h2>
-  <iframe src="https://dexscreener.com/polygon/0xEb41d826226f1083B7EAE6D32789Df2F1b3e9BD6?embed=1&theme=dark" width="100%" height="300"></iframe>  <h2>Beli FPC Sekarang</h2>
-  <a class="btn" href="https://quickswap.exchange/#/swap?outputCurrency=0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B" target="_blank">Beli di QuickSwap</a>  <h2>Smart Contract</h2>
-  <a href="https://polygonscan.com/token/0xEb41d826226f1083B7EAE6D32789Df2F1b3e9BD6" target="_blank">
-    0xEb41d826226f1083B7EAE6D32789Df2F1b3e9BD6
-  </a>
-  <br/>
-<!-- Form Login & Pendaftaran -->
-<div id="auth">
-  <h2>Daftar / Login</h2>
-  <input type="text" id="nama" placeholder="Nama"><br>
-  <input type="email" id="email" placeholder="Email"><br>
-  <input type="password" id="password" placeholder="Password"><br>
-  <button onclick="register()">Daftar</button>
-  <button onclick="login()">Login</button>
-</div>
-  
-<head>
-  <title>Register Freepal</title>
-  <meta charset="UTF-8">
+    nav a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #f1c40f;
+    }
+    .button {
+      background-color: #f1c40f;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    footer {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-<body>
-  <h2>Daftar Freepal Coin</h2>
-  <form id="freepal-form">
-    <input type="text" name="wallet" placeholder="Wallet Address" required><br>
-    <input type="email" name="email" placeholder="Email" required><br>
-    <button type="submit">Daftar</button>
-  </form>
-
-  <p id="response"></p>
-
-  <script>
-    const form = document.getElementById('freepal-form');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const data = new URLSearchParams(formData);
-
-      const response = await fetch("https://script.google.com/macros/s/AKfycby8ZxwLglo8oHdi6GjC-7eEV3GKetj2Sp9QxPCq-TVDIIeO0PejNPCf1ZIEZHm7TTYo/exec", {
-        method: 'POST',
-        body: data,
-      });
-
-      const result = await response.text();
-      document.getElementById('response').innerText = result;
-      form.reset();
-    });
-  </script>
-</body>
-</head>
-  
-<!-- Tombol Connect MetaMask -->
-<div id="wallet">
-  <button onclick="connectWallet()">🔗 Hubungkan MetaMask</button>
-  <p id="walletAddress"></p>
-</div>  
-  <script>
-function register() {
-  const nama = document.getElementById('nama').value;
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-  localStorage.setItem('user', JSON.stringify({ nama, email, password }));
-  alert("Pendaftaran berhasil!");
-}
-
-function login() {
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-  const user = JSON.parse(localStorage.getItem('user'));
-  if (user && user.email === email && user.password === password) {
-    alert("Login sukses, selamat datang " + user.nama);
-  } else {
-    alert("Email atau password salah");
-  }
-}
-
-async function connectWallet() {
-  if (window.ethereum) {
-    try {
-      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-      document.getElementById('walletAddress').innerText = "Wallet: " + accounts[0];
-    } catch (error) {
-      alert("Gagal terhubung ke wallet");
-    }
-  } else {
-    alert("MetaMask tidak terdeteksi!");
-  }
-}
-</script>
-  <a href="metamask.html" target="_blank">Metamask</a>
-  <a href="freewatch" class="btn">🎥 Watch & Earn</a>  <h2>Whitepaper</h2>
-  <iframe src="whitepaper_freepal_coin.pdf#toolbar=0" width="100%" height="500px"></iframe>  <h2>Alamat Donasi Palestina</h2>
-  <a href="https://polygonscan.com/address/0x76388169eA77B8a63AD6933bf154b6095523f99C" target="_blank">
-    0x76388169eA77B8a63AD6933bf154b6095523f99C
-  </a>  <section class="wallet-section">
-    <h2 style="font-size: 1.8rem;">Top-Up / Bayar<br>via e-Wallet</h2>
-    <div class="wallet-buttons">
-      <a href="https://link.dana.id/yourid" target="_blank">DANA</a>
-      <a href="https://www.gopay.co.id/qris" target="_blank">GoPay</a>
-      <a href="https://ovo.id/" target="_blank">OVO</a>
-      <a href="https://shopeepay.co.id/" target="_blank">ShopeePay</a>
-      <a href="https://ib.bri.co.id/ib-bri/" target="_blank">BRI Mobile</a>
-      <a href="https://ibank.bca.co.id/" target="_blank">BCA Mobile</a>
-    </div>
-  </section>  <div class="social-section">
-    <h3>Media Sosial</h3>
-    <div class="social-icons">
-      <a href="https://t.me/CoinFreepal" target="_blank">
-        <img src="https://cdn.simpleicons.org/telegram/ffffff" alt="Telegram">
-      </a>
-      <a href="https://twitter.com/CoinFreepal" target="_blank">
-        <img src="https://cdn.simpleicons.org/x/ffffff" alt="Twitter">
-      </a>
-    </div>
-   </div>
-<div style="margin-top: 4rem;">
-<script async="async" data-cfasync="false" src="//pl27302255.profitableratecpm.com/cd101e5fa96df68a3d4b62d8934c27a7/invoke.js"></script>
-<div id="container-cd101e5fa96df68a3d4b62d8934c27a7"></div>
-  </div>
-  <footer>
-    &copy; 2025 Freepal Coin. All rights reserved.
-  </footer>
-</body>
+<body>  <header>
+    <h1>Freepal Coin (FPC)</h1>
+    <p>Koin Digital untuk Kebebasan Palestina</p>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#beli">Cara Beli</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>  <section id="beranda">
+    <h2>Gabung Perjuangan Digital</h2>
+    <p>Freepal Coin (FPC) adalah token yang dibuat untuk mendukung perjuangan kebebasan dengan sistem transparan, adil, dan dapat diakses oleh siapa saja.</p>
+    <button class="button" onclick="alert('Fitur beli belum aktif, segera hadir!')">Beli Sekarang</button>
+  </section>  <section id="tentang">
+    <h2>Tentang FPC</h2>
+    <p>Freepal Coin diluncurkan di jaringan Polygon sebagai token ringan, cepat, dan biaya rendah. Separuh total supply dibagikan gratis untuk komunitas.</p>
+  </section>  <section id="beli">
+    <h2>Cara Beli</h2>
+    <ol>
+      <li>Install MetaMask dan hubungkan ke jaringan Polygon.</li>
+      <li>Kunjungi DEX seperti QuickSwap.</li>
+      <li>Masukkan alamat kontrak FPC: <code>0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B</code></li>
+      <li>Tukar MATIC ke FPC.</li>
+    </ol>
+  </section>  <section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <ul>
+      <li>Total Supply: 14.500.000 FPC</li>
+      <li>50% Airdrop gratis</li>
+      <li>50% Dijual publik</li>
+      <li>0% pajak transaksi</li>
+    </ul>
+  </section>  <section id="roadmap">
+    <h2>Roadmap</h2>
+    <ul>
+      <li>✅ Verifikasi kontrak Polygon</li>
+      <li>✅ Launch landing page</li>
+      <li>🔜 Airdrop komunitas</li>
+      <li>🔜 Listing di QuickSwap</li>
+      <li>🔜 Crowdfunding & komunitas global</li>
+    </ul>
+  </section>  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: <a href="mailto:faktinyaid@gmail.com" style="color:#f1c40f">faktinyaid@gmail.com</a></p>
+    <p>Telegram: <a href="https://t.me/faktinyaid" target="_blank" style="color:#f1c40f">@faktinyaid</a></p>
+  </section>  <footer>
+    &copy; 2025 Freepal Coin (FPC). All rights reserved.
+  </footer></body>
 </html>
