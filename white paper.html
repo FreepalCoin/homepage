@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whitepaper Freepal Coin</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #00ffae;
+    }
+    a {
+      color: #00ffae;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #999;
+      text-align: center;
+    }
+    select {
+      margin-bottom: 20px;
+      background: #222;
+      color: white;
+      padding: 6px;
+      border: 1px solid #555;
+      border-radius: 4px;
+    }
+  </style>
+  <script>
+    async function translateContent(lang) {
+      const translations = {
+        en: {
+          intro: "Freepal Coin is a digital asset supporting Palestinian freedom and inclusive global finance.",
+          feature: "Token Feature",
+          autoburn: "FPC has a 1% automatic burn mechanism on every transaction.",
+          supply: "Total Supply: 14,500,000 FPC",
+          network: "Network: Polygon Mainnet",
+          contract: "Smart Contract: ",
+          telegram: "Telegram: ",
+          website: "Website: "
+        },
+        id: {
+          intro: "Freepal Coin adalah aset digital yang mendukung kebebasan Palestina dan keuangan global yang inklusif.",
+          feature: "Fitur Token",
+          autoburn: "FPC memiliki mekanisme auto burn 1% di setiap transaksi.",
+          supply: "Total Supply: 14.500.000 FPC",
+          network: "Jaringan: Polygon Mainnet",
+          contract: "Smart Contract: ",
+          telegram: "Telegram: ",
+          website: "Situs Web: "
+        }
+      };const t = translations[lang];
+  document.getElementById("intro").textContent = t.intro;
+  document.getElementById("feature").textContent = t.feature;
+  document.getElementById("autoburn").textContent = t.autoburn;
+  document.getElementById("supply").textContent = t.supply;
+  document.getElementById("network").textContent = t.network;
+  document.getElementById("contract-label").textContent = t.contract;
+  document.getElementById("telegram-label").textContent = t.telegram;
+  document.getElementById("website-label").textContent = t.website;
+}
+
+  </script>
+</head>
+<body onload="translateContent('id')">
+  <h1>Whitepaper - Freepal Coin (FPC)</h1>  <select onchange="translateContent(this.value)">
+    <option value="id">🇮🇩 Bahasa Indonesia</option>
+    <option value="en">🇺🇸 English</option>
+  </select>  <div class="section">
+    <p id="intro"></p>
+  </div>  <div class="section">
+    <h2 id="feature"></h2>
+    <ul>
+      <li id="autoburn"></li>
+      <li id="supply"></li>
+      <li id="network"></li>
+    </ul>
+  </div>  <div class="section">
+    <h3 id="contract-label"></h3>
+    <a href="https://polygonscan.com/token/0xEb41d826226f1083B7EAE6D32789Df2F1b3e9BD6" target="_blank">
+      0xEb41d826226f1083B7EAE6D32789Df2F1b3e9BD6
+    </a>
+  </div>  <div class="section">
+    <h3 id="telegram-label"></h3>
+    <a href="https://t.me/CoinFreepal" target="_blank">@CoinFreepal</a>
+  </div>  <div class="section">
+    <h3 id="website-label"></h3>
+    <a href="https://freepalcoin.netlify.app" target="_blank">freepalcoin.netlify.app</a>
+  </div>  <footer>
+    &copy; 2025 Freepal Coin. All rights reserved.
+  </footer>
+</body>
+</html>
