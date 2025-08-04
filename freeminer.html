@@ -67,5 +67,42 @@
 
     updateDisplay();
   </script>
+<button onclick="startMining()">🚀 Start Mining</button>
+<button onclick="stopMining()">🛑 Stop Mining</button>
+<p id="status">Status: Tidak aktif</p>
+<p id="fpcCount">FPC: 0</p>
+
+<script>
+  let mining = false;
+  let fpc = 0;
+  let maxFPC = 1000;
+  let interval;
+
+  function startMining() {
+    if (fpc >= maxFPC) {
+      alert("Sudah mencapai maksimum 1000 FPC");
+      return;
+    }
+    if (!mining) {
+      mining = true;
+      document.getElementById("status").textContent = "Status: Mining...";
+      interval = setInterval(() => {
+        if (fpc < maxFPC) {
+          fpc++;
+          document.getElementById("fpcCount").textContent = `FPC: ${fpc}`;
+        } else {
+          stopMining();
+          alert("Sudah mencapai batas maksimum 1000 FPC");
+        }
+      }, 1000);
+    }
+  }
+
+  function stopMining() {
+    mining = false;
+    clearInterval(interval);
+    document.getElementById("status").textContent = "Status: Dihentikan";
+  }
+</script>  
 </body>
 </html>
