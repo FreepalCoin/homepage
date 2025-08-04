@@ -139,7 +139,11 @@ font-family: 'Inter', sans-serif;
       max-width: 800px;
       margin: auto;
 }
-
+  id: {
+      autoburn: "FPC memiliki mekanisme auto burn 1% di setiap transaksi.",
+      supply: "Total Supply: 14.500.000 FPC",
+       network: "Jaringan: Polygon Mainnet",
+}       
   </style>  <script>
     function copyAddress() {
       navigator.clipboard.writeText("0x76388169eA77B8a63AD6933bf154b6095523f99C");
@@ -162,9 +166,9 @@ font-family: 'Inter', sans-serif;
   
 <div class="fpc-detail">
   <ul>
-    <li>Bakar Otomatis: FPC memiliki mekanisme auto burn 1% di setiap transaksi</li>
-    <li>Total Supply: 14.500.000 FPC</li>
-    <li>Jaringan: Polygon Mainnet</li>
+    <li id="Bakar Otomatis"></li>
+    <li id="Total Supply"></li>
+    <li id="Jaringan"></li>
   </ul>
 </div>
   
