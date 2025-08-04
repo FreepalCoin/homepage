@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freepal Miner</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    .box {
+      background: #222;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: auto;
+    }
+    button {
+      background: #00ffae;
+      color: #000;
+      font-weight: bold;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .counter {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>⛏️ Freepal Miner</h1>
+    <p>Tekan tombol untuk mulai mining FPC secara otomatis</p>
+    <div class="counter" id="fpcCount">FPC: 0</div>
+    <button onclick="startMining()">Mulai Mining</button>
+  </div>
+
+  <script>
+    let fpc = parseFloat(localStorage.getItem("fpc")) || 0;
+    const display = document.getElementById("fpcCount");
+
+    function updateDisplay() {
+      display.textContent = `FPC: ${fpc.toFixed(2)}`;
+    }
+
+    function startMining() {
+      const interval = setInterval(() => {
+        if (fpc < 1000) {
+          fpc += 0.5;
+          localStorage.setItem("fpc", fpc);
+          updateDisplay();
+        } else {
+          clearInterval(interval);
+          alert("Maksimal mining tercapai: 1000 FPC");
+        }
+      }, 1000);
+    }
+
+    updateDisplay();
+  </script>
+</body>
+</html>
