@@ -7,6 +7,15 @@
   <meta name="monetag" content="94f103013017df4394a9b65242f1f769">
   <title>Freepal Coin (FPC)</title>
   <link rel="icon" href="logo.png" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#00ff99">
+
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js")
+      .then(() => console.log("Service Worker Registered"));
+  }
+  </script>
   <style>
     body {
       margin: 0;
